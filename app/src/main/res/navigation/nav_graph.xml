@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/NumbersFragment">
+
+    <fragment
+        android:id="@+id/NumbersFragment"
+        android:name="com.example.evegbeapp.NumbersFragment"
+        android:label="Numbers"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/NumbersFragment_to_ColoursFragment"
+            app:destination="@id/ColoursFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ColoursFragment"
+        android:name="com.example.evegbeapp.ColoursFragment"
+        android:label="Colours"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/ColoursFragment_to_DaysFragment"
+            app:destination="@id/DaysFragment" />
+        <action
+            android:id="@+id/ColoursFragment_to_NumbersFragment"
+           app:destination="@id/NumbersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DaysFragment"
+        android:name="com.example.evegbeapp.DaysFragment"
+        android:label="Days"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/DaysFragment_to_FamilyFragment"
+            app:destination="@id/FamilyFragment" />
+        <action
+            android:id="@+id/DaysFragment_to_ColoursFragment"
+            app:destination="@id/ColoursFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FamilyFragment"
+        android:name="com.example.evegbeapp.FamilyFragment"
+        android:label="Family"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/FamilyFragment_to_PhrasesFragment"
+            app:destination="@id/PhrasesFragment" />
+
+        <action
+            android:id="@+id/FamilyFragment_to_DaysFragment"
+            app:destination="@id/DaysFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PhrasesFragment"
+        android:name="com.example.evegbeapp.PhrasesFragment"
+        android:label="Phrases"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/PhrasesFragment_to_FamilyFragment"
+            app:destination="@id/FamilyFragment" />
+
+    </fragment>
+</navigation>

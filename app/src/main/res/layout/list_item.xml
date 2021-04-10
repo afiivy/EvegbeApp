@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="#E6F8F6"
+    android:minHeight="88dp">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/ImageView"
+        android:src="@mipmap/evebge"
+        android:contentDescription="@string/label" />
+
+        <RelativeLayout
+            android:id="@+id/text_container"
+            style="@style/Relative">
+
+            <TextView
+                android:id="@+id/eweText"
+                style="@style/TextView"
+                android:gravity="top"
+                android:textStyle="bold"
+                android:paddingTop="13dp"
+                tools:text="deka" />
+
+            <TextView
+                android:id="@+id/defaultText"
+                style="@style/TextView"
+                android:layout_below="@id/eweText"
+                android:paddingBottom="13dp"
+                android:gravity="bottom"
+                tools:text ="one" />
+
+            <ImageView
+                android:src="@drawable/baseline_play_arrow_black_24"
+                style="@style/Image"
+                android:contentDescription="@string/play" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

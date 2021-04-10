@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="category_phrases">#ECF6FA</color>
+    <color name="category_family">#FDF7EE</color>
+    <color name="category_days">#FFF5F8</color>
+    <color name="category_colors">#FDFCEF</color>
+    <color name="category_numbers">#F6F3FD</color>
+</resources>

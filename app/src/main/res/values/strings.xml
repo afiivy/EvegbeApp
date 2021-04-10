@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ewe</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="category_colours">COLOURS</string>
+    <string name="category_family">FAMILY</string>
+    <string name="category_phrases">PHRASES</string>
+    <string name="category_days">DAYS</string>
+    <string name="category_numbers">NUMBERS</string>
+    <string name="label">Label</string>
+    <string name="play">Play</string>
+
+</resources>
